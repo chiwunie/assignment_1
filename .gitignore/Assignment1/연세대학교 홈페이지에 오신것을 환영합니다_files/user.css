@@ -1,0 +1,73 @@
+@charset "UTF-8";
+
+.sch_dep button span{display:none;}
+.tab_info li a.active{  font-weight: normal; color: #fff; border: 1px solid #0067b3; background: #0067b3; }
+#ui-datepicker-div { display: none; z-index : 9999 !important; }
+.gs_list.bt_mg {   margin: 1.33em 0 1.33em !important; } 
+.intro .board_view .btn_refresh {right: 0;background: url(../img/intro/btn_schDep.png) no-repeat 14px -43px;text-indent: -9999px;width: 48px;height: 35px;border: 1px solid #808080; }
+.highcharts-button { display: none; }
+/*.highcharts-container {padding: 29px !important float:left; } */
+
+/*견학신청 달력 신청가능 값*/
+.intro .desc .date_wrap .calender_area dl dd.date table td.on{background: url(../img/intro/bg_requestcal.png) no-repeat center center;}
+.intro .date .calendar_table td.on{ cursor : pointer;   }
+.tblH.jw_vertical th{  vertical-align: middle; }
+/* 하이차트 */
+.highcharts-container text{ font-family:'NanumBarunGothic'; font-size:12px;}
+/*대학 숨김버튼 */
+.btnarea2 .jw_display_btn {  color: black !important;text-align: center;line-height: 32px;margin: 0 0 0 0.5em;   background: none !important; text-indent: inherit !important; }
+/* 프린트 화면 설정 */
+@media print{
+  #header, #snb, #path,#footer, .tab_area, .list_cb , .content h1, .list_notice ty2, .btn_wrap{ display: none; }
+  .content{   margin: 0 !important; font-size : 13px !important;  } 
+}
+/* 홍보영상 lcms*/
+.mov-box {position: relative;width: 100%;}
+.mov-box::before {content: "";display: block;padding-top: 60%;}
+iframe.mv-frame  {position: absolute;top: 0; left:0; bottom:0; right: 0;width: 100%;	height: 100%; }
+
+
+/*DatePicker*/
+
+.ui-datepicker-title select {     padding-right: 0px !important; width: 57px !important;}
+
+
+.article .cont_area strong { font-weight : bold !important }
+
+input[type="text"]{ ime-mode:active;}
+
+
+.admin_createDt { position: absolute;top: 0;right: 0;color: #ffffff;background: #000000;font-weight: bold;  }
+
+/* 20170622 */
+.ysns{padding-bottom:29px;text-align:center;border-bottom:1px solid #ccc;    padding-top: 118px; }
+.ysns p{padding-top:40px;font-size:16px;line-height:28px;color:#1a1a1a;border-top:3px solid #999;background:url(/_res/ocx/img/main/bg_sns1.png ) no-repeat 16px 0;}
+.ysns ul{overflow:hidden;  margin:10px auto 5px 87px;}
+.ysns li{float:left;width:100%;margin:0 7px; text-align:left; padding: 5px; }
+.ysns li a{display:block;}
+.ysns>a{display:inline-block;padding:4px 44px 6px 18px;border:1px solid #999;background:url(../img/main/btn_more.png) no-repeat 84% 50%;}
+
+
+@media screen and (max-width: 1200px){
+	.ysns{float:left;width:48%;}
+	.ysns{margin-left:4%;}	
+    
+}
+@media screen and (max-width: 640px){
+    
+	.ysns{float:none;width:auto;margin-left:0;}
+	.ysns p{padding-top:20px;line-height:25px;background:none;}
+	.ysns ul{margin:20px auto;}
+}
+.ysns h2 { text-align:left;  }
+.ysns ul li img { margin-top : 1px; }
+
+.admin_info .box_gray{ overflow: hidden;margin-top: 40px;    padding: 18px 30px;    background: #e5f4ff url(../img/admission/bg_contact.png) no-repeat 100% 100%; line-height: 1.6;  }
+.admin_info dt{ float: left;height: 20px;text-indent: -9999px;font-size: 0;color: transparent;background: url(../img/admission/iconset1.png) no-repeat; }
+.admin_info dd { float: left;margin-right: 30px;line-height: 1.6;}
+.admin_info dt.tel {width: 18px;margin-right: 12px;background-position: -20px 0;}
+.admin_info dt.mail { width: 20px; margin-right: 10px;background-position: -40px 0; } 
+
+@media only screen and (max-width: 960px){
+.admin_info dd{float: none;margin: 0 0 10px 30px;}
+}
